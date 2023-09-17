@@ -1,0 +1,44 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - odoo
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/templates:/etc/nginx/templates
+      - ./nginx/logs:/var/log/nginx
+    environment:
+      - NGINX_PG_HOST=${PG_ODOO_HOST}
+      - NGINX_PD_HOST=${PD_ODOO_HOST}
+
+  odoopg:
+    image: odoo:16
+    container_name: "odoopg"
+    volumes:
+      - ./odoo/files:/var/lib/odoo
+      - ./odoo/config:/etc/odoo
+      - ./odoo/addons:/mnt/extra-addons
+    environment:
+      - HOST=${PG_HOST}
+      - PORT=${PG_PORT}
+      - USER=${PG_USER}
+      - PASSWORD=${PG_PASS}
+
+  odoopd:
+    image: odoo:16
+    container_name: "odoopd"
+    volumes:
+      - ./odoo/files:/var/lib/odoo
+      - ./odoo/config:/etc/odoo
+      - ./odoo/addons:/mnt/extra-addons
+    environment:
+      - HOST=${PD_HOST}
+      - PORT=${PD_PORT}
+      - USER=${PD_USER}
+      - PASSWORD=${PD_PASS}
