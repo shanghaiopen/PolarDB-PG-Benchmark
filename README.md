@@ -10,6 +10,7 @@
 略
 
 ### ODOO服务器部署
+两个ODOO环境，后端数据库分别为PolarDB-PG和Postgres。部署步骤如下：
 1. `git clone https://github.com/shanghaiopen/PolarDB-PG-Benchmark.git`
 2. `cd PolarDB-PG-Benchmark`
 3. `cp .env.example .env`, 更新 `.env` 变量
