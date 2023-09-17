@@ -9,7 +9,7 @@ services:
       - "80:80"
     depends_on:
       - odoopg
-      - pdpppd
+      - odoopd
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/templates:/etc/nginx/templates
