@@ -7,10 +7,10 @@
 1. 安装docker、docker compose: https://docs.docker.com/engine/install/
 
 ### PolarDB-PG和Postgres数据库服务器部署
-略
+略 备注: 版本11的PolarDB-PG需要 `drop extension pg_trgm CASCADE;` 
 
 ### ODOO服务器部署
-两个ODOO环境，后端数据库分别为PolarDB-PG和Postgres。部署步骤如下：
+两个ODOO(16社区版)环境，后端数据库分别为PolarDB-PG和Postgres。部署步骤如下：
 1. `git clone https://github.com/shanghaiopen/PolarDB-PG-Benchmark.git`
 2. `cd PolarDB-PG-Benchmark`
 3. `cp .env.example .env`, 更新 `.env` 变量
