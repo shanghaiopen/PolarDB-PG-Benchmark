@@ -1,3 +1,5 @@
 /.env
 /nginx/nginx.conf
 /odoo/config/odoo.conf
+/odoopd/config/odoo.conf
+/odoopg/config/odoo.conf
