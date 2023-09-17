@@ -1,0 +1,150 @@
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 10
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2703
+number of failed transactions: 0 (0.000%)
+latency average = 222.521 ms
+initial connection time = 61.176 ms
+tps = 44.939512 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.003           0  \set aid random(1, 100000 * :scale)
+         0.001           0  \set bid random(1, 1 * :scale)
+         0.001           0  \set tid random(1, 10 * :scale)
+         0.001           0  \set delta random(-5000, 5000)
+        11.059           0  BEGIN;
+        10.969           0  UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+        10.812           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+        70.397           0  UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+        97.656           0  UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+        11.010           0  INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+        11.113           0  END;
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 30
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2748
+number of failed transactions: 0 (0.000%)
+latency average = 661.063 ms
+initial connection time = 137.808 ms
+tps = 45.381431 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.003           0  \set aid random(1, 100000 * :scale)
+         0.001           0  \set bid random(1, 1 * :scale)
+         0.001           0  \set tid random(1, 10 * :scale)
+         0.001           0  \set delta random(-5000, 5000)
+        11.224           0  BEGIN;
+        11.069           0  UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+        10.911           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+       443.498           0  UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+       159.144           0  UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+        10.862           0  INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+        11.453           0  END;
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 50
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2754
+number of failed transactions: 0 (0.000%)
+latency average = 1105.259 ms
+initial connection time = 226.235 ms
+tps = 45.238269 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.003           0  \set aid random(1, 100000 * :scale)
+         0.001           0  \set bid random(1, 1 * :scale)
+         0.001           0  \set tid random(1, 10 * :scale)
+         0.001           0  \set delta random(-5000, 5000)
+        11.236           0  BEGIN;
+        13.421           0  UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+        10.836           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+       857.345           0  UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+       182.019           0  UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+        10.891           0  INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+        10.974           0  END;
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 100
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2848
+number of failed transactions: 0 (0.000%)
+latency average = 2164.868 ms
+initial connection time = 533.427 ms
+tps = 46.192198 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.002           0  \set aid random(1, 100000 * :scale)
+         0.001           0  \set bid random(1, 1 * :scale)
+         0.001           0  \set tid random(1, 10 * :scale)
+         0.001           0  \set delta random(-5000, 5000)
+        10.420           0  BEGIN;
+        11.061           0  UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+        10.855           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+      1887.947           0  UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+       186.313           0  UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+        10.476           0  INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+        10.751           0  END;
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 300
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2771
+number of failed transactions: 0 (0.000%)
+latency average = 7006.299 ms
+initial connection time = 2515.639 ms
+tps = 42.818611 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.003           0  \set aid random(1, 100000 * :scale)
+         0.001           0  \set bid random(1, 1 * :scale)
+         0.001           0  \set tid random(1, 10 * :scale)
+         0.001           0  \set delta random(-5000, 5000)
+        11.520           0  BEGIN;
+        29.148           0  UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+        14.322           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+      6313.737           0  UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+       201.908           0  UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+        10.978           0  INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+        11.064           0  END;
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 500
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 3002
+number of failed transactions: 0 (0.000%)
+latency average = 11528.775 ms
+initial connection time = 2520.076 ms
+tps = 43.369743 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.003           0  \set aid random(1, 100000 * :scale)
+         0.001           0  \set bid random(1, 1 * :scale)
+         0.001           0  \set tid random(1, 10 * :scale)
+         0.001           0  \set delta random(-5000, 5000)
+        14.843           0  BEGIN;
+        72.128           0  UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+        23.151           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+     10226.584           0  UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+       199.149           0  UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+        11.027           0  INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+        11.850           0  END;

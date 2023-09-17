@@ -1,0 +1,96 @@
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: select only>
+scaling factor: 1
+query mode: simple
+number of clients: 10
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 53909
+number of failed transactions: 0 (0.000%)
+latency average = 11.139 ms
+initial connection time = 50.482 ms
+tps = 897.748152 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.001           0  \set aid random(1, 100000 * :scale)
+        11.754           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: select only>
+scaling factor: 1
+query mode: simple
+number of clients: 30
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 168232
+number of failed transactions: 0 (0.000%)
+latency average = 10.657 ms
+initial connection time = 246.258 ms
+tps = 2814.960473 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.001           0  \set aid random(1, 100000 * :scale)
+        10.744           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: select only>
+scaling factor: 1
+query mode: simple
+number of clients: 50
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 273292
+number of failed transactions: 0 (0.000%)
+latency average = 10.935 ms
+initial connection time = 240.563 ms
+tps = 4572.446351 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.001           0  \set aid random(1, 100000 * :scale)
+        11.062           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: select only>
+scaling factor: 1
+query mode: simple
+number of clients: 100
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 551804
+number of failed transactions: 0 (0.000%)
+latency average = 10.775 ms
+initial connection time = 556.984 ms
+tps = 9281.013599 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.001           0  \set aid random(1, 100000 * :scale)
+        10.858           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: select only>
+scaling factor: 1
+query mode: simple
+number of clients: 300
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 1290501
+number of failed transactions: 0 (0.000%)
+latency average = 13.629 ms
+initial connection time = 1459.026 ms
+tps = 22011.555811 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.001           0  \set aid random(1, 100000 * :scale)
+        13.673           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: select only>
+scaling factor: 1
+query mode: simple
+number of clients: 500
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 1240304
+number of failed transactions: 0 (0.000%)
+latency average = 23.303 ms
+initial connection time = 2443.939 ms
+tps = 21456.345025 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.001           0  \set aid random(1, 100000 * :scale)
+        23.321           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;

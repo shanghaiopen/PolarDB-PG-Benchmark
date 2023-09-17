@@ -1,0 +1,90 @@
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 10
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2741
+number of failed transactions: 0 (0.000%)
+number of transactions above the 100.0 ms latency limit: 2660/2741 (97.045%)
+latency average = 175.179 ms
+latency stddev = 69.483 ms
+average connection time = 44.091 ms
+tps = 45.528437 (including reconnection times)
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 30
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2314
+number of failed transactions: 0 (0.000%)
+number of transactions above the 100.0 ms latency limit: 2311/2314 (99.870%)
+latency average = 736.565 ms
+latency stddev = 686.357 ms
+average connection time = 45.027 ms
+tps = 38.146445 (including reconnection times)
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 50
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2223
+number of failed transactions: 0 (0.000%)
+number of transactions above the 100.0 ms latency limit: 2221/2223 (99.910%)
+latency average = 1314.544 ms
+latency stddev = 1336.538 ms
+average connection time = 45.836 ms
+tps = 36.333727 (including reconnection times)
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 100
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2260
+number of failed transactions: 0 (0.000%)
+number of transactions above the 100.0 ms latency limit: 2259/2260 (99.956%)
+latency average = 2650.524 ms
+latency stddev = 3125.449 ms
+average connection time = 44.845 ms
+tps = 36.305588 (including reconnection times)
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 300
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2375
+number of failed transactions: 0 (0.000%)
+number of transactions above the 100.0 ms latency limit: 2375/2375 (100.000%)
+latency average = 7887.645 ms
+latency stddev = 7659.352 ms
+average connection time = 45.210 ms
+tps = 35.452333 (including reconnection times)
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.21 (CSUDATA.COM CentOS 7))
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 500
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2520
+number of failed transactions: 0 (0.000%)
+number of transactions above the 100.0 ms latency limit: 2520/2520 (100.000%)
+latency average = 12786.304 ms
+latency stddev = 11121.013 ms
+average connection time = 44.741 ms
+tps = 35.185516 (including reconnection times)
