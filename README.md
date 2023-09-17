@@ -4,7 +4,7 @@
 
 ### 基准测试
 
-使用pgbench，6个场景下，PolarDB-PG和Postgres的性能表现情况。测试脚本和数据：[tests](tests)
+使用pgbench，6个场景不同并发，PolarDB-PG和Postgres的性能表现情况。测试脚本和数据：[tests](tests)
 
 1. 读取测试场景：模拟并发读取操作的情况
 
