@@ -47,3 +47,50 @@ statement latencies in milliseconds and failures:
          0.001           0  \set aid random(1, 100000 * :scale)
         11.792           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
 pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.9)
+transaction type: <builtin: select only>
+scaling factor: 1
+query mode: simple
+number of clients: 100
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 515130
+number of failed transactions: 0 (0.000%)
+latency average = 11.558 ms
+initial connection time = 472.419 ms
+tps = 8652.056231 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.001           0  \set aid random(1, 100000 * :scale)
+        11.644           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.9)
+transaction type: <builtin: select only>
+scaling factor: 1
+query mode: simple
+number of clients: 300
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 1266534
+number of failed transactions: 0 (0.000%)
+latency average = 13.683 ms
+initial connection time = 2422.074 ms
+tps = 21925.599341 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.001           0  \set aid random(1, 100000 * :scale)
+        13.704           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.9)
+transaction type: <builtin: select only>
+scaling factor: 1
+query mode: simple
+number of clients: 500
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 1203076
+number of failed transactions: 0 (0.000%)
+latency average = 23.332 ms
+initial connection time = 4323.278 ms
+tps = 21429.545379 (without initial connection time)
+statement latencies in milliseconds and failures:
+         0.001           0  \set aid random(1, 100000 * :scale)
+        23.319           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;

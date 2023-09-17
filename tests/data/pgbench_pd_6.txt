@@ -1,0 +1,90 @@
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.9)
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 10
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2730
+number of failed transactions: 0 (0.000%)
+number of transactions above the 100.0 ms latency limit: 2624/2730 (96.117%)
+latency average = 173.588 ms
+latency stddev = 71.145 ms
+average connection time = 46.591 ms
+tps = 45.346318 (including reconnection times)
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.9)
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 30
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2287
+number of failed transactions: 0 (0.000%)
+number of transactions above the 100.0 ms latency limit: 2282/2287 (99.781%)
+latency average = 744.815 ms
+latency stddev = 670.679 ms
+average connection time = 46.589 ms
+tps = 37.667844 (including reconnection times)
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.9)
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 50
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2093
+number of failed transactions: 0 (0.000%)
+number of transactions above the 100.0 ms latency limit: 2092/2093 (99.952%)
+latency average = 1471.286 ms
+latency stddev = 1637.794 ms
+average connection time = 48.786 ms
+tps = 32.562475 (including reconnection times)
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.9)
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 100
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 1875
+number of failed transactions: 0 (0.000%)
+number of transactions above the 100.0 ms latency limit: 1874/1875 (99.947%)
+latency average = 3197.307 ms
+latency stddev = 3452.072 ms
+average connection time = 53.429 ms
+tps = 30.090069 (including reconnection times)
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.9)
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 300
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2320
+number of failed transactions: 0 (0.000%)
+number of transactions above the 100.0 ms latency limit: 2320/2320 (100.000%)
+latency average = 8056.497 ms
+latency stddev = 7406.590 ms
+average connection time = 48.338 ms
+tps = 34.718446 (including reconnection times)
+pgbench (15.4 (Ubuntu 15.4-0ubuntu0.23.04.1), server 11.9)
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 500
+number of threads: 10
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 2346
+number of failed transactions: 0 (0.000%)
+number of transactions above the 100.0 ms latency limit: 2346/2346 (100.000%)
+latency average = 13664.847 ms
+latency stddev = 11673.135 ms
+average connection time = 51.015 ms
+tps = 32.817497 (including reconnection times)

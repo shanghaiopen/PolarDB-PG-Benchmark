@@ -5,5 +5,5 @@
 #THREADS="10"
 #CLIENTS="10 30 50 100 300 500"
 for c in $CLIENTS; do
-  pgbench -h $HOST -p $PORT -U postgres -T 60 -C -c $c -j $THREADS -L odoo
+  pgbench -h $HOST -p $PORT -U postgres -T 60 -C -c $c -j $THREADS -L 100 odoo
 done
