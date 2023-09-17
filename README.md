@@ -3,7 +3,7 @@
 ## 测试环境
 | 实例    | 配置                                                        | 备注                                                                           | 链接                                                                                                                               |
 |-------|-----------------------------------------------------------|------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| 数据服务器 | 阿里云 4 vCPU 16 GiB （I/O优化）<br/>ecs.g7.xlarge   20Mbps （峰值） | CentOS7.0；PolarDB-PG(11.9)和Postgres(11.21)都直接部署在这个服务器                        | PolarDB-PG参数：[postgresql-pd.conf](odoopd%2Fpostgresql-pd.conf)<br/> Postgres参数：[postgresql-pg.conf](odoopg%2Fpostgresql-pg.conf) |
+| 数据服务器 | 阿里云 4 vCPU 16 GiB （I/O优化）<br/>ecs.g7.xlarge   20Mbps （峰值） | CentOS 7.0；PolarDB-PG(11.9)和Postgres(11.21)都直接部署在这个服务器                       | PolarDB-PG参数：[postgresql-pd.conf](odoopd%2Fpostgresql-pd.conf)<br/> Postgres参数：[postgresql-pg.conf](odoopg%2Fpostgresql-pg.conf) |
 | 应用服务器 | 阿里云 4 vCPU 16 GiB （I/O优化）<br/>ecs.g7.xlarge   20Mbps （峰值） | Ubuntu 22.04；通过docker部署，两个ODOO(16社区版)环境，后端分别为PolarDB-PG和Postgres，前端通过NGINX代理 | NGINX参数：[nginx.conf.example](nginx%2Fnginx.conf.example)<br/> ODOO-PG参数：[odoo.conf.example](odoopg%2Fconfig%2Fodoo.conf.example)<br/> ODOO-PD参数：[odoo.conf.example](odoopd%2Fconfig%2Fodoo.conf.example) |
 
 
