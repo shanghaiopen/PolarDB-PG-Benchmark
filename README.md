@@ -25,6 +25,7 @@
 5. `cp odoopd/config/odoo.conf.example odoopd/config/odoo.conf`
 6. `cp odoopg/config/odoo.conf.example odoopg/config/odoo.conf`
 7. `docker compose up -d`
+8. 实例起来之后，通过数据库管理页面，创建数据库 `odoo`, 安装销售、采购、库存等应用模块
 
 
 
