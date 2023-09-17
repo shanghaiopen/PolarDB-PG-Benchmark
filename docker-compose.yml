@@ -21,6 +21,7 @@ services:
   odoopg:
     image: odoo:16
     container_name: "odoopg"
+    restart: always
     volumes:
       - ./odoo/files:/var/lib/odoo
       - ./odoo/config:/etc/odoo
@@ -34,6 +35,7 @@ services:
   odoopd:
     image: odoo:16
     container_name: "odoopd"
+    restart: always
     volumes:
       - ./odoo/files:/var/lib/odoo
       - ./odoo/config:/etc/odoo
