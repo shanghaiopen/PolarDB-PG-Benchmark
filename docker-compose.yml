@@ -23,9 +23,9 @@ services:
     container_name: "odoopg"
     restart: always
     volumes:
-      - ./odoo/files:/var/lib/odoo
-      - ./odoo/config:/etc/odoo
-      - ./odoo/addons:/mnt/extra-addons
+      - ./odoopg/files:/var/lib/odoo
+      - ./odoopg/config:/etc/odoo
+      - ./odoopg/addons:/mnt/extra-addons
     environment:
       - HOST=${PG_HOST}
       - PORT=${PG_PORT}
@@ -37,9 +37,9 @@ services:
     container_name: "odoopd"
     restart: always
     volumes:
-      - ./odoo/files:/var/lib/odoo
-      - ./odoo/config:/etc/odoo
-      - ./odoo/addons:/mnt/extra-addons
+      - ./odoopd/files:/var/lib/odoo
+      - ./odoopd/config:/etc/odoo
+      - ./odoopd/addons:/mnt/extra-addons
     environment:
       - HOST=${PD_HOST}
       - PORT=${PD_PORT}
