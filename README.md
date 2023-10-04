@@ -61,7 +61,40 @@
 
 
 ### 应用测试
-更新中...
+| Clients: 10 | create product.template | create res.partner | create puchase.order | confirm purchase.order | create sale.order | confirm sale.order |
+| ----------- | ----------------------- | ------------------ | -------------------- | ---------------------- | ----------------- | ------------------ |
+| PolarDB-PG  | 4.33                    | 7.68               | 4.93                 | 3.99                   | 12.67             | 9.61               |
+| Postgres    | 4.50                    | 11.60              | 4.85                 | 4.11                   | 6.71              | 4.57               |
+
+
+
+| Clients: 20 | create product.template | create res.partner | create puchase.order | confirm purchase.order | create sale.order | confirm sale.order |
+| ----------- | ----------------------- | ------------------ | -------------------- | ---------------------- | ----------------- | ------------------ |
+| PolarDB-PG  | 4.19                    | 5.57               | 4.64                 | 4.25                   | 9.38              | 6.66               |
+| Postgres    | 4.81                    | 5.83               | 6.18                 | 4.44                   | 12.28             | 5.28               |
+
+
+
+| Clients: 30 | create product.template | create res.partner | create puchase.order | confirm purchase.order | create sale.order | confirm sale.order |
+| ----------- | ----------------------- | ------------------ | -------------------- | ---------------------- | ----------------- | ------------------ |
+| PolarDB-PG  | 6.02                    | 6.69               | 4.71                 | 4.54                   | 12.72             | 5.77               |
+| Postgres    | 5.56                    | 9.71               | 4.54                 | 4.41                   | 11.24             | 5.57               |
+
+
+
+| Clients: 50 | create product.template | create res.partner | create puchase.order | confirm purchase.order | create sale.order | confirm sale.order |
+| ----------- | ----------------------- | ------------------ | -------------------- | ---------------------- | ----------------- | ------------------ |
+| PolarDB-PG  | 6.18                    | 6.16               | 4.77                 | 4.93                   | 12.54             | 6.68               |
+| Postgres    | 5.77                    | 6.88               | 5.04                 | 5.93                   | 10.50             | 8.64               |
+
+
+
+| Clients: 100 | create product.template | create res.partner | create puchase.order | confirm purchase.order | create sale.order | confirm sale.order |
+| ------------ | ----------------------- | ------------------ | -------------------- | ---------------------- | ----------------- | ------------------ |
+| PolarDB-PG   | 6.35                    | 6.76               | 5.39                 | 5.25                   | 6.92              | 5.53               |
+| Postgres     | 6.75                    | 7.32               | 5.58                 | 4.94                   | 8.75              | 5.85               |
+
+
 
 ## 测试环境
 

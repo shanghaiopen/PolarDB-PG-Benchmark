@@ -1,0 +1,1 @@
+python ./odoo_pg.py > ./data/odoo_pg.csv
