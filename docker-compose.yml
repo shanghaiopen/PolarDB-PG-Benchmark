@@ -17,6 +17,11 @@ services:
     environment:
       - NGINX_PG_HOST=${PG_ODOO_HOST}
       - NGINX_PD_HOST=${PD_ODOO_HOST}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "16m"
+        max-file: "16"
 
   odoopg:
     image: odoo:16
@@ -31,6 +36,11 @@ services:
       - PORT=${PG_PORT}
       - USER=${PG_USER}
       - PASSWORD=${PG_PASS}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "16m"
+        max-file: "16"
 
   odoopd:
     image: odoo:16
@@ -45,3 +55,8 @@ services:
       - PORT=${PD_PORT}
       - USER=${PD_USER}
       - PASSWORD=${PD_PASS}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "16m"
+        max-file: "16"
