@@ -122,7 +122,7 @@
 5. `cp odoopd/config/odoo.conf.example odoopd/config/odoo.conf`
 6. `cp odoopg/config/odoo.conf.example odoopg/config/odoo.conf`
 7. `docker compose up -d`
-8. 实例起来之后，通过数据库管理页面，创建数据库 `odoo`, 安装销售、采购、库存等应用模块
+8. 实例起来之后，通过`docker inspect nginx|grep HostPort`得到nginx端口映射号, 通过浏览器访问`127.0.0.1:端口`数据库管理页面，创建数据库 `odoo`, 安装销售、采购、库存等应用模块
 
 
 
