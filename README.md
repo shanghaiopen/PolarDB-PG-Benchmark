@@ -117,14 +117,14 @@
 两个ODOO(16社区版)环境，后端数据库分别为PolarDB-PG和Postgres。部署步骤如下：
 1. `git clone https://github.com/shanghaiopen/PolarDB-PG-Benchmark.git`
 2. `cd PolarDB-PG-Benchmark`
-3. 将odoopd,odoopg目录及里面的内容改成777权限
-4. `cp .env.example .env`, 更新 `.env` 变量
-5. `cp nginx/nginx.conf.example nginx/nginx.conf`
-6. `cp odoopd/config/odoo.conf.example odoopd/config/odoo.conf`
-7. `cp odoopg/config/odoo.conf.example odoopg/config/odoo.conf`
+3. `cp .env.example .env`, 更新 `.env` 变量
+4. `cp nginx/nginx.conf.example nginx/nginx.conf`
+5. `cp odoopd/config/odoo.conf.example odoopd/config/odoo.conf`
+6. `cp odoopg/config/odoo.conf.example odoopg/config/odoo.conf`
+7. `chmod -R 777 odoop*`
 8. `docker compose up -d`
-9. 配置docker network, 使得odoopg, odoopd可访问数据库的docker容器
-10. 修改本地宿主机hosts配置, 分别指向odoopd和odoopg 2个测试环境
+9. 配置docker network, 使得odoopg, odoopd可访问数据库的docker容器. `docker network connect bridge odoopg` ; `docker network connect bridge odoopd`
+10. 修改本地宿主机hosts配置, 分别指向odoopd和odoopg 2个测试环境 
 11. 实例起来之后，通过web访问odoo，在URL输入`http://` `.env`配置的`PG_ODOO_HOST`或`PD_ODOO_HOST`, 分别对pg和PolarDB数据库后端进行配置. 创建数据库, 安装销售、采购、库存等应用模块
 
 
