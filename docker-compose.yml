@@ -6,7 +6,7 @@ services:
     container_name: nginx
     restart: always
     ports:
-      - "80:80"
+      - 80
     depends_on:
       - odoopg
       - odoopd
@@ -25,6 +25,7 @@ services:
 
   odoopg:
     image: odoo:16
+    platform: linux/amd64
     container_name: "odoopg"
     restart: always
     volumes:
@@ -44,6 +45,7 @@ services:
 
   odoopd:
     image: odoo:16
+    platform: linux/amd64
     container_name: "odoopd"
     restart: always
     volumes:
