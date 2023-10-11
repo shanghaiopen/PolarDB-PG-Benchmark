@@ -125,7 +125,7 @@
 8. `docker compose up -d`
 9. 配置docker network, 使得odoopg, odoopd可访问数据库的docker容器
 10. 修改本地宿主机hosts配置, 分别指向odoopd和odoopg 2个测试环境
-11. 实例起来之后，通过web访问odoo，在URL输入`http://` `.env`配置的`PG_ODOO_HOST`和`PD_ODOO_HOST`, 创建数据库, 安装销售、采购、库存等应用模块
+11. 实例起来之后，通过web访问odoo，在URL输入`http://` `.env`配置的`PG_ODOO_HOST`或`PD_ODOO_HOST`, 分别对pg和PolarDB数据库后端进行配置. 创建数据库, 安装销售、采购、库存等应用模块
 
 
 
