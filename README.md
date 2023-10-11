@@ -123,9 +123,8 @@
 6. `cp odoopg/config/odoo.conf.example odoopg/config/odoo.conf`
 7. `chmod -R 777 odoop*`
 8. `docker compose up -d`
-9. 配置docker network, 使得odoopg, odoopd可访问数据库的docker容器. `docker network connect bridge odoopg` ; `docker network connect bridge odoopd`
-10. 修改本地宿主机hosts配置, 分别指向odoopd和odoopg 2个测试环境 
-11. 实例起来之后，通过web访问odoo，在URL输入`http://` `.env`配置的`PG_ODOO_HOST`或`PD_ODOO_HOST`, 分别对pg和PolarDB数据库后端进行配置. 创建数据库, 安装销售、采购、库存等应用模块
+9. DNS解析设置：通过域名DSN服务器或者通过修改应用客户端hosts, 分别设置odoopd和odoopg两个服务的域名解析，域名同 .env内的PG_ODOO_HOST和PD_ODOO_HOST环境变量
+10. 实例起来之后，通过web访问odoo，在URL输入`http://` `.env`配置的`PG_ODOO_HOST`或`PD_ODOO_HOST`,然后分别对pg和PolarDB数据库后端进行配置：创建数据库, 安装销售、采购、库存等应用模块
 
 
 
