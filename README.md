@@ -95,6 +95,15 @@
 | Postgres     | 6.75                    | 7.32               | 5.58                 | 4.94                   | 8.75              | 5.85               |
 
 
+## 测试步骤
+### 基准测试
+1. 进入[tests](tests)目录，分别执行 [pgbench_pd.sh](tests%2Fpgbench_pd.sh) 和 [pgbench_pg.sh](tests%2Fpgbench_pg.sh) 
+2. 进入[data](tests%2Fdata) 查看测试结果
+
+### 应用测试
+1. 数据初始：分别执行 [odoo_init_pd.py](tests%2Fodoo_init_pd.py) 和 [odoo_init_pg.py](tests%2Fodoo_init_pg.py) 
+2. 应用测试：分别执行 [odoo_pd.sh](tests%2Fodoo_pd.sh) 和 [odoo_pg.sh](tests%2Fodoo_pg.sh)
+3. 进入[data](tests%2Fdata) 查看测试结果
 
 ## 测试环境
 
