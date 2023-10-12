@@ -111,7 +111,8 @@
 1. 安装docker、docker compose: https://docs.docker.com/engine/install/
 
 ### PolarDB-PG和Postgres数据库服务器部署
-部署过程有待补充。备注: 版本11的PolarDB-PG需要 `drop extension pg_trgm CASCADE;` 
+部署文档：https://github.com/digoal/blog/blob/master/202310/20231011_01.md#%E5%AE%9E%E7%8E%B0%E5%92%8C%E5%AF%B9%E7%85%A7
+备注: 版本11的PolarDB-PG需要 `drop extension pg_trgm CASCADE;` 
 
 ### ODOO服务器部署
 两个ODOO(16社区版)环境，后端数据库分别为PolarDB-PG和Postgres。部署步骤如下：
@@ -126,5 +127,6 @@
 9. DNS解析设置：通过域名DSN服务器或者通过修改应用客户端hosts, 分别设置odoopd和odoopg两个服务的域名解析，域名同 .env内的`PG_ODOO_HOST`和`PD_ODOO_HOST`环境变量
 10. 实例起来之后，通过浏览器访问odoo，在URL输入`http://` `.env`配置的`PG_ODOO_HOST`或`PD_ODOO_HOST`,然后分别对pg和PolarDB数据库后端进行配置：创建数据库, 安装销售、采购、库存等应用模块
 
+更详细的部署可参考: https://github.com/digoal/blog/blob/master/202310/20231011_01.md
 
 
